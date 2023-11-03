@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #3853a8;
+  --primary-lighter: #496cdd;
   --footer-color: #060e30;
   --body-color: #d9d9d9;
 
@@ -49,7 +50,6 @@ button {
 /* Navbar Start */
 .navbar {
   background-color: var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
   font-family: var(--paragraph-font);
   width: 100%;
   height: 5rem;
@@ -67,9 +67,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  outline: 1px solid black;
 }
 
-.navbar ul li a {
+.nav-link {
   text-decoration: none;
   color: var(--body-color);
   font-size: 1.75rem;
@@ -81,9 +82,27 @@ button {
   transition: background-color .1s, color .1s;
 }
 
-.navbar ul li a:hover{
-  background-color: var(--body-color);
-  color: var(--primary-color);
+.nav-link:hover{
+  background-color: #496cdd;
+}
+
+/* Mobile screen Icons */
+.nav-link-icon {
+  color: var(--body-color);
+  font-size: 1.25rem;
+  display: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 550px) {
+  .nav-link {
+    display: none;
+  }
+  
+  .nav-link-icon {
+    display: block;
+  }
 }
 /* Navbar End */
 
