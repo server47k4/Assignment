@@ -29,6 +29,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: #d9d9d9;
 }
 
 h1,
@@ -41,4 +42,143 @@ p {
 
 button {
   cursor: pointer;
+}
+
+#main-container{
+  margin: 5em auto;
+  width: 90vw;
+  font-size: 1rem;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:90vw;
+  padding: 1em;
+  margin: auto;
+}
+
+.cards-container h2 {
+  font-family: var(--heading-font);
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  color: #060e30;
+}
+
+.cards-container p {
+  font-family: var(--paragraph-font);
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+}
+
+.card{
+  width: 20em;
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 3em;
+  margin: 3em 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .img {
+  margin: 2em 0;
+}
+
+#info-container{
+  width: 70vw;
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 40%;
+  padding: 2em;
+}
+
+.container-left h1{
+  font-family: var(--heading-font);
+  color: #3853a8;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.container-left img {
+  width: 350px;
+  margin: 3em auto 0 auto;
+}
+
+.container-right{
+  border: 2px solid #3853a8;
+  border-radius: 3px;
+  width: 300px;
+  height: 40%;
+  padding: 1em;
+}
+
+.container-right h2{
+  font-family: var(--heading-font);
+  margin: 1em 0 0.5em 0 ;
+  text-align: center;
+  color: #060e30;
+}
+
+.container-right p{
+  font-family: var(--paragraph-font);
+  margin: 0 0 1em 0;
+}
+
+@media (max-width: 400px) {
+  #main-container h1 {
+    font-size: 10vw;
+  }
+
+  #main-container h2 {
+    font-size: 5vw;
+  }
+
+  #main-container p {
+    font-size: 12px;
+  }
+
+  .cards-container p {
+    color: black;
+  }
+
+  .card{
+    padding: 1em;
+    margin: 1.5em 0;
+  }
+
+  #info-container{
+    background-color: #3853a8;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #info-container h1, h2, p{
+    color: #d9d9d9;
+  }
+
+  .container-left img {
+    width: 250px;
+    margin: 3em auto 0 auto;
+  }
+
+  .container-right h2 {
+    color: #d9d9d9;
+  }
+ 
 }
