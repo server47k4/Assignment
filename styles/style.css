@@ -5,6 +5,7 @@
   --primary-lighter: #496cdd;
   --footer-color: #060e30;
   --body-color: #d9d9d9;
+  --black-color: black;
 
   --heading-font: "Yeseva One", serif;
   --paragraph-font: "League Spartan", sans-serif;
@@ -67,7 +68,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid black;
+}
+
+.navbar ul a {
+  text-decoration: none;
 }
 
 .nav-link {
@@ -86,22 +90,55 @@ button {
   background-color: #496cdd;
 }
 
+.nav-link-icon-container {
+  display: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .2s, color .1s;
+}
+
+.nav-link-icon-container p {
+  display: none;
+  font-size: 1.25rem;
+  color: var(--black-color);
+  font-weight: var(--medium-weight-500);
+}
+
+.active-nav-link-icon-container {
+  background-color: var(--body-color);
+  gap: 1rem;
+  width: 6rem;
+  padding: .25em 3.75em;
+  border-radius: 3rem;
+}
+
+.active-nav-link-icon-container i {
+  color: var(--black-color);
+}
+
+.active-nav-link-icon-container p {
+  display: block;
+}
+
 /* Mobile screen Icons */
 .nav-link-icon {
   color: var(--body-color);
   font-size: 1.25rem;
-  display: none;
-  cursor: pointer;
+  transition: background-color .1s;
 }
 
-
 @media screen and (max-width: 550px) {
-  .nav-link {
+  .navbar ul {
+    justify-content: center;
+    gap: 20%;
+    min-width: 0;
+  }
+  .navbar ul li {
     display: none;
   }
-  
-  .nav-link-icon {
-    display: block;
+  .nav-link-icon-container {
+    display: flex;
   }
 }
 /* Navbar End */
