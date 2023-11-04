@@ -276,7 +276,12 @@ padding-block: 4em;
   margin: 0 0 1em 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
+
+  #main-container {
+    width: 100%;
+  }
+
   #main-container h1 {
     font-size: 10vw;
   }
@@ -300,7 +305,7 @@ padding-block: 4em;
 
   #info-container{
     background-color: #3853a8;
-    margin: 0 auto;
+    margin: 2em auto;
     width: 100%;
   }
 
