@@ -1,134 +1,155 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="/images/bannerImage.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fontawesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Favicon -->
+  <link rel="icon" href="/images/bannerImage.png" />
 
-    <!-- CSS & JS -->
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="JS/app.js" defer></script>
-    <title>Dhul Hijjah</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <header>
-      <nav class="navbar" id="navbar">
-        <ul>
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <a href="#home">
-            <div class="nav-link-icon-container active-nav-link-icon-container">
-              <i class="nav-link-icon fa-solid fa-house"></i>
-              <p>Home</p>
-            </div>
-          </a>
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-          <li><a href="#about" class="nav-link">About</a></li>
-          <a href="#about">
-            <div class="nav-link-icon-container">
-              <i class="nav-link-icon fa-solid fa-circle-info"></i>
-              <p>About</p>
-            </div>
-          </a>
+  <!-- CSS & JS -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="JS/app.js" defer></script>
+  <title>Dhul Hijjah</title>
+</head>
 
-          <li><a href="#events" class="nav-link">Event</a></li>
-          <a href="#event">
-            <div class="nav-link-icon-container">
-              <i class="nav-link-icon fa-solid fa-calendar-check"></i>
-              <p>Event</p>
-            </div>
-          </a>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <a href="#home">
+          <div class="nav-link-icon-container active-nav-link-icon-container">
+            <i class="nav-link-icon fa-solid fa-house"></i>
+            <p>Home</p>
+          </div>
+        </a>
 
-          <li><a href="#locations" class="nav-link">Locations</a></li>
-          <a href="#locations">
-            <div class="nav-link-icon-container">
-              <i class="nav-link-icon fa-solid fa-location-dot"></i>
-              <p>Locations</p>
-            </div>
-          </a>
-        </ul>
-      </nav>
-    </header>
-    <!-- Hero Section -->
-    <section class="hero-section" id="hero-section">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <a href="#about">
+          <div class="nav-link-icon-container">
+            <i class="nav-link-icon fa-solid fa-circle-info"></i>
+            <p>About</p>
+          </div>
+        </a>
+
+        <li><a href="#events" class="nav-link">Event</a></li>
+        <a href="#event">
+          <div class="nav-link-icon-container">
+            <i class="nav-link-icon fa-solid fa-calendar-check"></i>
+            <p>Event</p>
+          </div>
+        </a>
+
+        <li><a href="#locations" class="nav-link">Locations</a></li>
+        <a href="#locations">
+          <div class="nav-link-icon-container">
+            <i class="nav-link-icon fa-solid fa-location-dot"></i>
+            <p>Locations</p>
+          </div>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero-section">
+    <div>
+      <img src="images/bannerImage.png" alt="image with a big palace" />
+    </div>
+  </section>
+  <!-- Cloud Section -->
+  <section class="cloud-section">
+    <article>
       <div>
-        <img src="images/bannerImage.png" alt="image with a big palace" />
+        <p>
+          The Importance of the <br /><span><em>10 Days</em></span> of Dhul
+          Hijjah
+        </p>
+      </div>
+      <div>
+        <img src="images/cloud.png" alt="" />
+      </div>
+    </article>
+  </section>
+
+  <!--- CARDS & INFO --->
+  <!---CARDS-->
+  <div id="main-container">
+    <section class=" cards-container">
+      <div class="card">
+        <div class="img">
+          <img src="images/icon1.png">
+        </div>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur praesentium necessitatibus maiores
+          labore. Magni beatae id, esse nobis nihil asperiores reiciendis debitis tempore veniam vero velit tenetur,
+          iste delectus?</p>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="images/icon2.png">
+        </div>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur praesentium necessitatibus maiores
+          labore. Magni beatae id, esse nobis nihil asperiores reiciendis debitis tempore veniam vero velit tenetur,
+          iste delectus?</p>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="images/icon3.png">
+        </div>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur praesentium necessitatibus maiores
+          labore. Magni beatae id, esse nobis nihil asperiores reiciendis debitis tempore veniam vero velit tenetur,
+          iste delectus?</p>
       </div>
     </section>
-    <!-- Cloud Section -->
-    <section class="cloud-section">
-      <article>
-        <div>
-          <p>
-            The Importance of the <br /><span><em>10 Days</em></span> of Dhul
-            Hijjah
-          </p>
-        </div>
-        <div>
-          <img src="images/cloud.png" alt="" />
-        </div>
-      </article>
+    <!---CARDS ENDS-->
+
+    <!---INF0 STARTS-->
+    <section id="info-container">
+      <div class="container-left">
+        <h1>This year's Dhul Hijjah</h1>
+        <img src="images/section4Mosque.png">
+      </div>
+
+      <div class="container-right">
+        <h2> Salah</h2>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium repellendus ducimus distinctio cumque
+          fugiat, nihil officia labore quo natus perspiciatis.</p>
+
+        <h2> Fasting</h2>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium repellendus ducimus distinctio cumque
+          fugiat, nihil officia labore quo natus perspiciatis.</p>
+
+        <h2> Quran</h2>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium repellendus ducimus distinctio cumque
+          fugiat, nihil officia labore quo natus perspiciatis.</p>
+      </div>
     </section>
 
-     <!--- CARDS & INFO --->
-        <!---CARDS-->
-    <div id="main-container">
-      <section class=" cards-container">
-        <div class="card">
-          <div class="img">
-            <img src="images/icon1.png">
-          </div>
-          <h2>Lorem Ipsum</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur praesentium necessitatibus maiores labore. Magni beatae id, esse nobis nihil asperiores reiciendis debitis tempore veniam vero velit tenetur, iste delectus?</p>
-        </div>
+    <!-- Zeshan Part 3 -->
+    <section id="form-section">
+      <h2>Register to our <i>Newsletter!</i></h2>
+      <form action="">
+        <input type="text" placeholder="First Name" class="form-input first-name">
+        <input type="text" placeholder="Last Name" class="form-input last-name">
+        <input type="email" placeholder="Email" class="form-input email-input">
+        <textarea name="" id="" cols="30" rows="10" class="form-input message-input"
+          placeholder="Write something..."></textarea>
+        <button class="btn">Submit Email</button>
+      </form>
+    </section>
+  </div>
+</body>
 
-        <div class="card">
-          <div class="img">
-            <img src="images/icon2.png">
-          </div>
-          <h2>Lorem Ipsum</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur praesentium necessitatibus maiores labore. Magni beatae id, esse nobis nihil asperiores reiciendis debitis tempore veniam vero velit tenetur, iste delectus?</p>
-        </div>
-
-        <div class="card">
-          <div class="img">
-            <img src="images/icon3.png">
-          </div>
-          <h2>Lorem Ipsum</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet tenetur praesentium necessitatibus maiores labore. Magni beatae id, esse nobis nihil asperiores reiciendis debitis tempore veniam vero velit tenetur, iste delectus?</p>
-        </div>
-      </section>
-        <!---CARDS ENDS-->
-
-        <!---INF0 STARTS-->
-      <section id="info-container">
-        <div class="container-left">
-          <h1>This year's Dhul Hijjah</h1>
-          <img src="images/section4Mosque.png">
-        </div>
-
-        <div class="container-right">
-          <h2> Salah</h2>
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium repellendus ducimus distinctio cumque fugiat, nihil officia labore quo natus perspiciatis.</p>
-
-          <h2> Fasting</h2>
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium repellendus ducimus distinctio cumque fugiat, nihil officia labore quo natus perspiciatis.</p>
-
-          <h2> Quran</h2>
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium repellendus ducimus distinctio cumque fugiat, nihil officia labore quo natus perspiciatis.</p>
-        </div>
-      </section>
-    </div>
-  </body>
 </html>
