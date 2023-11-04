@@ -191,7 +191,7 @@ padding-block: 4em;
   flex-wrap: wrap;
   justify-content: space-around;
   width:90vw;
-  padding: 1em;
+  gap: 2em;
   margin: auto;
 }
 
