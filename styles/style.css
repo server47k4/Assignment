@@ -86,7 +86,7 @@ button {
   transition: background-color .1s, color .1s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   background-color: #496cdd;
 }
 
@@ -134,26 +134,30 @@ button {
     gap: 20%;
     min-width: 0;
   }
+
   .navbar ul li {
     display: none;
   }
+
   .nav-link-icon-container {
     display: flex;
   }
 }
+
 /* Navbar End */
 
 /* Hero Section Start */
-.hero-section div{
-display: flex;
-justify-content: center;
-align-items: center;
-padding-block: 4em;
+.hero-section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 4em;
 }
 
 .hero-section div img {
   width: 80%;
 }
+
 /* Hero Section End */
 
 /* Cloud Section Start */
@@ -178,19 +182,20 @@ padding-block: 4em;
 .cloud-section article img {
   width: 90%;
 }
+
 /* Cloud Section End */
 /* Azka's Part */
-#main-container{
+#main-container {
   margin: 5em auto;
   width: 90vw;
   font-size: 1rem;
 }
 
-.cards-container{
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width:90vw;
+  width: 90vw;
   gap: 2em;
   margin: auto;
 }
@@ -209,7 +214,7 @@ padding-block: 4em;
   text-align: center;
 }
 
-.card{
+.card {
   width: 20em;
   border: 2px solid var(--primary-color);
   border-radius: 3px;
@@ -225,7 +230,7 @@ padding-block: 4em;
   margin: 2em 0;
 }
 
-#info-container{
+#info-container {
   width: 70vw;
   margin: 2em auto;
   display: flex;
@@ -244,7 +249,7 @@ padding-block: 4em;
   padding: 2em;
 }
 
-.container-left h1{
+.container-left h1 {
   font-family: var(--heading-font);
   color: #3853a8;
   font-size: 4vw;
@@ -256,7 +261,7 @@ padding-block: 4em;
   margin: 3em auto 0 auto;
 }
 
-.container-right{
+.container-right {
   border: 2px solid #3853a8;
   border-radius: 3px;
   width: 300px;
@@ -264,14 +269,14 @@ padding-block: 4em;
   padding: 1em;
 }
 
-.container-right h2{
+.container-right h2 {
   font-family: var(--heading-font);
-  margin: 1em 0 0.5em 0 ;
+  margin: 1em 0 0.5em 0;
   text-align: center;
   color: #060e30;
 }
 
-.container-right p{
+.container-right p {
   font-family: var(--paragraph-font);
   margin: 0 0 1em 0;
 }
@@ -298,18 +303,20 @@ padding-block: 4em;
     color: black;
   }
 
-  .card{
+  .card {
     padding: 1em;
     margin: 1.5em 0;
   }
 
-  #info-container{
+  #info-container {
     background-color: #3853a8;
     margin: 2em auto;
     width: 100%;
   }
 
-  #info-container h1, h2, p{
+  #info-container h1,
+  h2,
+  p {
     color: #d9d9d9;
   }
 
@@ -321,6 +328,100 @@ padding-block: 4em;
   .container-right h2 {
     color: #d9d9d9;
   }
- 
+
 }
+
 /* Azka's part end */
+
+/* Zeshan Part 3 */
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  gap: 2em;
+  justify-content: space-evenly;
+}
+
+#form-section h2 {
+  color: #3853a8;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: var(--heading-font);
+  /* border: 1px solid red; */
+  width: 70%;
+  text-align: center;
+}
+
+#form-section h2 i {
+  text-decoration: underline;
+}
+
+#form-section form {
+  /* border: 1px solid black; */
+  display: flex;
+  width: 60%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.form-input {
+  border: none;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+
+  height: 40px;
+  padding-left: 1em;
+
+}
+
+.form-input::placeholder {
+  font-weight: bold;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 0.5em;
+}
+
+.form-input:nth-child(1) {
+  flex: 40%;
+}
+
+.form-input:nth-child(2) {
+  flex: 40%;
+}
+
+.form-input:nth-child(3) {
+  flex: 100%;
+}
+
+.form-input:nth-child(4) {
+  flex: 100%;
+  height: 120px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.8em 2.5em;
+  color: #d9d9d9;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  margin-top: 25px;
+  font-weight: 600;
+  font-family: var(--paragraph-font);
+
+}
